@@ -1,0 +1,9 @@
+
+* hor/ver stripes, areas
+* method that gets width/height and x1,y1, x2,y2 and calc. x,y from that
+* arbitrary precision for deep-zooming
+
+Please send me test-reports, your experiences with this and your ideas - I love
+to hear about my work!
+
+Tels <http://bloodgate.com/>

@@ -1,0 +1,13 @@
+CHANGES
+CREDITS
+BUGS
+INSTALL
+README
+LICENSE
+MANIFEST
+SIGNATURE
+TODO
+Mandelbrot.xs
+Makefile.PL
+lib/Math/Fractal/Mandelbrot.pm
+t/mandel.t

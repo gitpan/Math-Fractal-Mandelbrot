@@ -1,0 +1,32 @@
+Module to calculate Mandelbrot fractal points efficiently
+
+(C) ..--- ----- ----- ...-- by - . .-.. ... .-.-.-  All rights reserved.
+
+How to install (replace the version below with the current one):
+
+	tar -xzf Math-Fractal-Mandelbrot-0.01.tar.gz
+	cpansign --verify
+
+If the signature does not verify ok, you might to install Module::Signature
+and get my key from <http://bloodgate.com/tels.asc>.
+
+If the signature still does not verify okay, notify me. DO NO INSTALL this
+package when the signature is BAD - your system might get compromised!
+
+If the signature is good, do:
+
+	perl Makefile.PL
+	make
+	make test
+
+and then as root:
+
+	make install
+
+Look for SDL-App-FPS on search.cpan.org for a demo application using this
+module.
+
+Please send me test-reports, your experiences with this and your ideas - I love
+to hear about my work!
+
+Tels <http://bloodgate.com/>
