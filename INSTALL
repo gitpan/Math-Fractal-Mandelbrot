@@ -1,33 +1,28 @@
-Module to replace Math::BigInt's core math routines by using Math::GMP.
+Module to calculate Mandelbrot Fractals
 
 (C) ..--- ----- ----- .---- by - . .-.. ... .-.-.-  All rights reserved.
 
-This package contains a replacement (drop-in) module for Math::BigInt's core,
-Math::BigInt::Calc.pm. It needs the new versions of Math::BigInt and
-Math::BigFloat as they are from Perl 5.7.x onwards.
+First: you need to install Module::Signature, if you haven't already.
 
-How to install:
+Then get my key (http://bloodgate.com/tels.asc) and unwrap this package, then
+verify the contents by:
+
+	cpansign --verify
+
+If the signature is valid, proceed. If the signature is B<NOT> valid, do 
+B<NOT> proceed. Your system might get compromies. Please inform me ASAP.
+
+When the signature was okay:
 
 	perl Makefile.PL
 	make
 	make test
 	make install
 
-To use it, replace:
+If not all tests passed, please inform me.
 
-	use Math::BigInt;
-
-with this:
-
-	use Math::BigInt lib => 'GMP';
-
-Please read the documentation under PERFORMANCE in Math::BigInt on when to
-use this module and when not.
-
-More information including HTMLified help and preliminary benchmark results
-are available under:
-
-	http://bloodgate.com/perl/
+This module is used by an example inside the SDL::App::FPS package, make sure
+you check it out to see the Mandelbrot Fractal in action :)
 
 Please send me test-reports, your experiences with this and your ideas - I love
 to hear about my work!
