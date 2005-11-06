@@ -18,7 +18,7 @@ use vars qw/@ISA $VERSION @EXPORT_OK/;
    set_bounds set_limit set_max_iter set_epsilon
    /;
 
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 bootstrap Math::Fractal::Mandelbrot $VERSION;
 
@@ -35,19 +35,26 @@ Math::Fractal::Mandelbrot - Calculate points in the mandelbrot fractal
 
 =head1 SYNOPSIS
 
+=head1 DESCRIPTION
+
 Calculates points, horizontal/vertical stripes or rectangular areas of the
 famous Mandelbrot fractal.
+
+X<fractal>
+X<mandelbrot>
+X<recursive>
 
 =head1 LICENSE
  
 This program is free software; you may redistribute it and/or modify it under
 the same terms as Perl itself. 
 
+X<license>
+X<perl>
+
 =head1 METHODS
 
-=over 2
-
-=item set_max_iter()
+=head2 set_max_iter()
 	
 	Math::Fractal::Mandelbrot->set_max_iter($max_iter);
 
@@ -55,20 +62,20 @@ Set the maximum number of iterations. 600 is the default and quite suitable
 for the start image. When zooming in, this value should be increased to
 not loose details.
 
-=item set_limit()
+=head2 set_limit()
 
 	Math::Fractal::Mandelbrot->set_limit($limit);
 
 The default value is 5 and should only be changed if you know why.
 
-=item set_epsilon()
+=head2 set_epsilon()
 
 	Math::Fractal::Mandelbrot->set_epsilon($e);
 
 The default value is 0.001. When the change between two iterations is less
 than this number, the point is considered to be on the inside.
 
-=item set_bounds()
+=head2 set_bounds()
 
 	Math::Fractal::Mandelbrot->set_bounds($x1,$y1,$x2,$y2,$w,$h);
 
@@ -79,7 +86,7 @@ The default values are:
 
 	Math::Fractal::Mandelbrot->set_bounds(-2,-1.1, 1,1.1, 640,480);
 
-=item point()
+=head2 point()
 
 	my $iter = Math::Fractal::Mandelbrot->point($x,$y);
 
@@ -90,7 +97,7 @@ the number of iterations it took to find out that the point is on the outside.
 $x and $y should be between 0 and C<w> and 0 and C<h>, respectively (see
 L<set_bounds()>).
 
-=item hor_line($x1,$y1,$l)
+=head2 hor_line($x1,$y1,$l)
 
 	my $points = Math::Fractal::Mandelbrot->hor_line($x1,$y1,$l);
 
@@ -108,7 +115,7 @@ in the array beeing equal to the first value. Example:
 
 See L<point()> for details.
 
-=item ver_line($x1,$y1,$l)
+=head2 ver_line($x1,$y1,$l)
 
 	my @points = Math::Fractal::Mandelbrot->ver_line($x1,$y1,$l);
 
@@ -121,9 +128,9 @@ See L<point()> for further details.
 
 =head1 AUTHOR
 
-=head1 AUTHOR
+Tels <http://bloodgate.com/> in 2003, 2005.
 
-Tels <http://bloodgate.com/> in 2003.
+X<tels>
 
 =head1 SEE ALSO
 

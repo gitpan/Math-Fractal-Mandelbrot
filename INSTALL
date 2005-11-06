@@ -1,7 +1,5 @@
 Module to calculate Mandelbrot Fractals
 
-(C) ..--- ----- ----- .---- by - . .-.. ... .-.-.-  All rights reserved.
-
 First: you need to install Module::Signature, if you haven't already.
 
 Then get my key (http://bloodgate.com/tels.asc) and unwrap this package, then
@@ -17,7 +15,7 @@ When the signature was okay:
 	perl Makefile.PL
 	make
 	make test
-	make install
+	sudo make install
 
 If not all tests passed, please inform me.
 

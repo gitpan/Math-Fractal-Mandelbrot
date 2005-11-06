@@ -7,7 +7,10 @@ LICENSE
 MANIFEST
 SIGNATURE
 TODO
+META.yml
 Mandelbrot.xs
 Makefile.PL
 lib/Math/Fractal/Mandelbrot.pm
 t/mandel.t
+t/pod.t
+t/pod_cov.t
