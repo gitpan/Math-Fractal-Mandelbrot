@@ -18,7 +18,7 @@ use vars qw/@ISA $VERSION @EXPORT_OK/;
    set_bounds set_limit set_max_iter set_epsilon
    /;
 
-$VERSION = '0.03';
+$VERSION = '0.04';
 
 bootstrap Math::Fractal::Mandelbrot $VERSION;
 
@@ -128,7 +128,7 @@ See L<point()> for further details.
 
 =head1 AUTHOR
 
-Tels <http://bloodgate.com/> in 2003, 2005.
+Tels <http://bloodgate.com/> in 2003, 2005, 2006.
 
 X<tels>
 

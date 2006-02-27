@@ -1,4 +1,8 @@
 
+2006-02-27 v0.04 Tels - 12 tests
+  * remove unusued class arguments in XS code
+  * rename "class" to "myclass" in XS code to avoid clashes
+
 2005-11-06 v0.03 Tels - 12 tests
   * update distribution with META.yml, pod tests
   * add X<> keywords to POD

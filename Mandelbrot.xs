@@ -56,8 +56,7 @@ PROTOTYPES: ENABLE
 # input: X and Y   coordinates of the point
 
 unsigned int
-point(class, x1, y1)
-	SV*	class
+point(myclass, x1, y1)
 	unsigned int x1
 	unsigned int y1
   INIT:
@@ -97,8 +96,7 @@ point(class, x1, y1)
 #        L 	   length of line
 
 AV*
-hor_line(class, x1, y1, l)
-	SV*	class
+hor_line(myclass, x1, y1, l)
 	unsigned int	x1
 	unsigned int	y1
 	unsigned int	l
@@ -133,8 +131,7 @@ hor_line(class, x1, y1, l)
 #        L 	   length of line
 
 AV*
-ver_line(class, x1, y1, l)
-	SV*	class
+ver_line(myclass, x1, y1, l)
 	unsigned int	x1
 	unsigned int	y1
 	unsigned int	l
@@ -170,8 +167,7 @@ ver_line(class, x1, y1, l)
 # input: new max_iter
 
 unsigned int
-set_max_iter(class, new_max_iter)
-	SV*	class
+set_max_iter(myclass, new_max_iter)
 	unsigned int	new_max_iter
   CODE:
     m_max_iter = new_max_iter;
@@ -186,8 +182,7 @@ set_max_iter(class, new_max_iter)
 # input: new limit
 
 double
-set_limit(class, new_limit)
-	SV*	class
+set_limit(myclass, new_limit)
 	double	new_limit
   CODE:
     m_limit = new_limit;
@@ -201,8 +196,7 @@ set_limit(class, new_limit)
 # input: new limit
 
 double
-set_epsilon(class, new_e)
-	SV*	class
+set_epsilon(myclass, new_e)
 	double	new_e
   CODE:
     m_epsilon = new_e;
@@ -216,8 +210,7 @@ set_epsilon(class, new_e)
 # input: x1,y1, x2,y2, w,h
 
 void
-set_bounds(class, nx1, ny1, nx2, ny2, nw, nh)
-	SV*	class
+set_bounds(myclass, nx1, ny1, nx2, ny2, nw, nh)
 	double	nx1
 	double	ny1
 	double	nx2

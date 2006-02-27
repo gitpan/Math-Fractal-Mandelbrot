@@ -9,7 +9,8 @@ sub MY::metafile {
     return $self->SUPER::metafile_target(@_);
   };
 
-  my $node = new YAML::Node {};
+  use YAML::Node;
+  my $node = YAML::Node->new({});
 
   $node->{name}                 = $self->{DISTNAME};
   $node->{version}              = $self->{VERSION};
